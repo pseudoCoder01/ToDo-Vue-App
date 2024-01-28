@@ -1,0 +1,8 @@
+{
+    "python.formatting.provider": "none",
+    "vue.features.codeActions.enable": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "editor.fontSize": 16
+}

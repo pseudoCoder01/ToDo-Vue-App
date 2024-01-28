@@ -1,0 +1,228 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #333 !important;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.text-box {
+    border: 1px solid #e3e6f0;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.tableESP {
+    width: 30%;
+    border-collapse: collapse;
+    border: 1px solid #dee2e6;
+}
+
+.tableESP th,
+.tableESP td {
+    border: 1px solid #dee2e6;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    max-width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-content: center;
+    /*background: white;*/
+    /*margin-top: 3px;*/
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+    border-bottom-width: 2px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.tabla-cantidad,
+.tabla-precio,
+.tabla-total {
+    width: 10%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+#tabla-solicitudes td,
+#tabla-solicitudes th {
+    border: 1px solid black;
+    padding: .55rem;
+}
+
+.title-footer,
+.title-cot {
+    padding: 0;
+    margin: 0;
+}
+
+.custom-table {
+    width: 100%;
+}
+
+.is-bottom {
+    border-bottom: 1px solid black !important;
+    padding: 0 14px;
+    width: 5%;
+}
+
+hr {
+    width: 30%;
+}
+
+/*
+@page {
+    size: letter;
+    margin-top: 2.5cm;
+    margin-bottom: 2.5cm;
+
+    @bottom-left {
+        background: #fbc847;
+        content: counter(page);
+        height: 1cm;
+        text-align: center;
+        width: 1cm;
+    }
+    @top-center{
+        color: #a9a;
+        content: element(row-header);
+        font-size: 9pt;
+    }
+    @bottom-center {
+        color: #a9a;
+        content: 'contact@courtbouillon.org | courtbouillon.org';
+        font-size: 9pt;
+    }
+}
+*/
+@page {
+    size: letter;
+    margin-left: 10mm;
+    margin-right: 10mm;
+    margin-top: 25mm;
+    margin-bottom: 25mm;
+
+    @top-left {
+        content: element(headerLeft2);
+    }
+
+    @top-right {
+        content: element(headerRight2);
+    }
+
+    @bottom-center {
+        content: element(footerCenter);
+    }
+
+    @bottom-left {
+        content: counter(page) ' / 'counter(pages);
+        font-size: 8pt;
+    }
+}
+
+@page :first {
+    margin-top: 30mm;
+
+    @top-left {
+        content: element(headerLeft);
+    }
+
+    @top-center {
+        content: element(headerCenter);
+    }
+
+    @top-right {
+        content: element(headerRight);
+    }
+}
+
+.headerCenter {
+    position: running(headerCenter);
+    font-size: 10.5pt;
+    margin: 0;
+    padding: 0;
+}
+
+.headerLeft {
+    position: running(headerLeft);
+}
+
+.headerLeft2 {
+    position: running(headerLeft2);
+}
+
+.headerLeft img {
+    width: 20mm;
+}
+
+.headerRight {
+    position: running(headerRight);
+}
+
+.headerRight2 {
+    position: running(headerRight2);
+}
+
+.headerRight img {
+    width: 20mm;
+
+}
+
+.footerCenter {
+    position: running(footerCenter);
+    font-size: 8.5pt;
+}

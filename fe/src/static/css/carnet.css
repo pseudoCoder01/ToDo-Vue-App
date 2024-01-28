@@ -1,0 +1,57 @@
+:root {
+  --color-utp: #7a1c79;
+}
+
+#app{
+  padding: 0;
+  margin: 0;
+}
+
+.info {
+  padding: 5%;
+  padding-top: 0%;
+  text-align: left;
+}
+
+.info div {
+  margin-top: 15px;
+}
+
+.short {
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto-utp {
+  color: var(--color-utp);
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.texto-utp-mute {
+  color: #5d5d5d;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+
+.carnet-estudiante label {
+	display:block;
+}
+.carnet-estudiante span {
+	display:block;
+	margin-bottom:1.2em;
+}
+
+#botones-boletos {
+	margin:0 auto;
+	width:70%;
+}
+#botones-boletos .content {
+	display:flex;
+	justify-content:space-between;
+}
+#botones-boletos button img {
+	width:128px;
+}
