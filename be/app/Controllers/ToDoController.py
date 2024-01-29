@@ -9,6 +9,7 @@ def GuardarToDo(todo):
     ret = ControllerObject()
     try:
         newToDo = ToDo(
+            id = todo.get('id'),
             todo = todo.get('todo'),
             categoria_id = todo.get('categoria'),
             completado = 0,
@@ -21,6 +22,7 @@ def GuardarToDo(todo):
         ret.mensaje = 'Guardado satisfactoriamente'
 
     except Exception as e:
+        print(e)
         ret.status  = 500
         ret.mensaje = 'Ocurrió un problema, intente de nuevo'
 
@@ -31,7 +33,7 @@ def GetAllToDo():
     ret = ControllerObject()
         
     try:
-        allToDo = [todo.toDict() for todo in ToDo.query.all()]
+        allToDo = [todo.toDict() for todo in ToDo.query.order_by(ToDo.id).all()]
 
         ret.status  = 200
         ret.payload = allToDo
